@@ -25,9 +25,9 @@
       public function hello() {
           return "I am " . $this->firstname . " " . $this->lastname . ", my age is: " . $this->age . "";
       }
-    } // output the properties of the object
+    } // output the properties of the object (firstname, lastname, age)
 
-    // 4. creating a new person named "John Wayne", who is 25 years old
+    // 4. creating 2 new objects out of class Person
     // 'new' keyword is used to create an object from a class
     $person1 = new Person('Remy', 'Wayne', 33); // create object $person1
     $person2 = new Person('Zac', 'Wayne', 26); // create object $person2
