@@ -7,7 +7,7 @@
   <?php
   /* CONSTANTS
     - identifiers for given value
-    - cannot be cahnged during the script as a variable can
+    - cannot be changed during the script as a variable can
     - automatically named globally across the script
     - name must start as a letter or underscore
     - doesn't require a dollar sign before the name
