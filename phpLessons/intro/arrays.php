@@ -22,7 +22,7 @@
 
   echo "<hr />";
 
-  // ASSOCIATIVE ARRAYS
+  // ASSOCIATIVE ARRAYS - allow us to asign values to elements (Keys)
   $tscore = array("Remy" => "50", "Zac" => "60", "Gabri" => "70");
   echo "Gabri scored: " . $tscore["Gabri"] . " /100.";
   echo "<hr />";
