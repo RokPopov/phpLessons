@@ -32,7 +32,7 @@ for($i = 0; $i < $rnlen; $i++) { // for-loop to output each value in the array
 echo "<hr ./>";
 
 
-// ASSOCIATIVE ARRAY SORT ACCORDING TO VALUE
+// ASORT - ASSOCIATIVE ARRAY SORT ACCORDING TO VALUE
 $tscore = array("Remy" => "50", "Zac" => "60", "Gabri" => "75", "Simone" => "65");
 asort($tscore); // sort the elements in associative array in ascending order by their Value
 
