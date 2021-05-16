@@ -21,7 +21,7 @@
     $name = $website = $position = $experience = $estatus = $comments = "";
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    //
+    // check if any of the fields are empty, in this case display an error message and don't output the inputted form data
     if (empty($_POST["name"])) {
       echo "<span class=\"error\">Error: First Name is Required</span>";
     } else if (empty($_POST["website"])) {
