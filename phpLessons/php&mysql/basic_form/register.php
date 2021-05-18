@@ -1,6 +1,6 @@
 <?php
 
-  $id = val($_POST["id"]);
+  $id = val($_POST["id"]); // TODO figure out how to add auto-incerement to the id column of users table after the table is created
   $fname = val($_POST["fname"]);
   $lname = val($_POST["lname"]);
   $email = val($_POST["email"]);
@@ -26,7 +26,8 @@
   $sql = "INSERT INTO users (id, firstname, lastname, email) VALUES ('$id', '$fname', '$lname', '$email')";
 
   if ($connection->query($sql) === TRUE) {
-    echo "You did it. What an achievement. Celebrate.";
+    $last_id = $connection->insert_id;
+    echo "You did it. What an achievement. Celebrate. Your record ID is: " . $last_id; // TODO currenctly it gives a value 0 because the previous query was not auto-incremented
   } else {
     echo "Error: " . $sql . "<br>" . $connection->error;
   }
